@@ -1,8 +1,10 @@
-const Input = () => {
+const Input = ({value,onChange}) => {
   return (
     <div className="relative w-full ">
       <input
         type="text"
+        value={value}
+        onChange={onChange}
         placeholder="Enter a URL"
         className="p-3 pl-12 w-full rounded-lg bg-gray-900 text-white focus:outline-none focus:ring-4 focus:ring-gradient focus:ring-offset-1 focus:ring-opacity-50 transition duration-300 ease-in-out"
       />
