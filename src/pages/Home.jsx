@@ -51,6 +51,7 @@ const Home = () => {
       console.log(`Error: ${error}`);
       setError(error.message);
     } finally {
+      setSearch("");
       setIsFetching(false);
     }
   };
