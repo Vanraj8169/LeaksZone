@@ -44,7 +44,7 @@ const Home = () => {
       );
       const finalUrl = replaceDomain(
         response.data.message[0].full_short,
-        "megazone.website"
+        "leakszone.online"
       );
       setUrl(finalUrl);
     } catch (error) {
