@@ -57,7 +57,11 @@ const Home = () => {
   };
 
   const handleButtonClick = () => {
-    createURL();
+    if(search.trim() === ""){
+      setError("Search field cannot be empty");
+      return ;
+    }
+   createURL();
   };
 
   const handleCopyClick = () => {
